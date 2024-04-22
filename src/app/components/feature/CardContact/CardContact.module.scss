@@ -1,0 +1,42 @@
+.card {
+    width: 100%;
+    margin: 20px 50px;
+    font-weight: 700;
+    background-color: #fff;
+    border: 0.3px solid #d4d3d3;
+
+    .ant-card {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 0 8px 8px;
+        border: 1px solid #f0f0f0;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: rgba(0, 0, 0, 0.88);
+        font-size: 14px;
+        line-height: 1.5714285714285714;
+        list-style: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+        position: relative;
+        background: #ffffff;
+
+        .ant-card-body {
+            padding: 32px;
+            border-radius: 0 0 8px 8px;
+
+            .content {
+                p {
+                    font-size: 20px;
+                    color: #494a4a;
+                    font-weight: 400;
+                }
+            }
+
+            .marginCss {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}

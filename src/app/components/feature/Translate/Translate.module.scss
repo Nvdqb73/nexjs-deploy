@@ -1,0 +1,43 @@
+.flag_country {
+    position: relative;
+
+    input {
+        display: none;
+    }
+
+    input:checked + label::before {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .content::before {
+        content: '✓';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 8px;
+        left: 0;
+        background: blue;
+        color: #fff;
+        text-align: center;
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 50%;
+        opacity: 0;
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+    }
+    .content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+
+        .icon-translate {
+            width: 50px;
+            color: transparent;
+        }
+    }
+}

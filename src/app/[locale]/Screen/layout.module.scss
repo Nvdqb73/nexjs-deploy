@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+}
+
+.container {
+    width: 1230px;
+    min-height: 1000px;
+}
+
+.content {
+    padding: 12px 0 0 0;
+}
+
+.lightBox_css {
+    z-index: 9999;
+}

@@ -1,0 +1,53 @@
+.col {
+    padding: 16px;
+    box-sizing: border-box;
+
+    .service__box {
+        background: #fff;
+        padding: 26px 30px;
+        text-align: center;
+        border-radius: 10px;
+        position: relative;
+        box-shadow: 0 10px 36px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.06);
+        overflow: hidden;
+        transition: all 0.3s ease-out 0s;
+        &:hover {
+            background-color: #b83a3a;
+            box-shadow: none;
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
+        &:hover .service__box--icon span {
+            color: #fff;
+        }
+
+        &:hover .service__content h3 {
+            color: #fff;
+        }
+        .service__box--icon {
+            display: flex;
+            justify-content: center;
+            span {
+                font-size: 50px;
+                color: #c55b5b;
+                margin-top: 10px;
+                .icon-plane-departure {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+        }
+
+        .service__content {
+            h3 {
+                margin: 15px 0;
+                font-size: 20px;
+                line-height: 1.25;
+                height: 2em;
+                letter-spacing: 0.05em;
+                font-weight: 400;
+                color: black;
+            }
+        }
+    }
+}

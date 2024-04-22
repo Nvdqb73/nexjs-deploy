@@ -1,0 +1,52 @@
+.container-content-search {
+    display: flex;
+    flex-flow: row wrap;
+    min-width: 0;
+    width: 100%;
+    max-width: 1400px;
+    padding-left: 20px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+
+    .container-content-search_input {
+        width: 50%;
+        padding-right: 10px;
+
+        input {
+            width: 100%;
+            padding: 10px 11px;
+            font-size: 2rem;
+            border-radius: 8px;
+            font-weight: 500;
+            background-color: #fff;
+            border: 0.3px solid #d4d3d3;
+            color: #5b5959;
+            outline: none;
+        }
+    }
+
+    .container-content-search_country {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 23px;
+
+        .radio-group {
+            .radio-wrapper {
+                position: relative;
+                z-index: 1 !important;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+
+        .images_logo {
+            width: 80px;
+            height: 100%;
+        }
+    }
+}

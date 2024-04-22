@@ -1,0 +1,103 @@
+.card {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+
+    .card-content {
+        margin: 20px 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #f6f8f9;
+        border-radius: 10px;
+        max-width: 390px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s;
+        padding: 10px;
+        width: 100%;
+        border: 0.3px solid #b2c1e5;
+        box-shadow: 0 4px 16px rgba(136, 165, 191, 0.48), 0 8px 24px hsla(0, 0%, 100%, 0.8),
+            0 16px 56px hsla(0, 0%, 100%, 0.8);
+
+        .content-user {
+            margin: 30px;
+            .content-user-image {
+                aspect-ratio: 1 / 1;
+                overflow: hidden;
+                margin: 20px;
+                .user-image-item {
+                    width: 80%;
+                    height: 80%;
+                    border-radius: 50%;
+                    border: 3px solid #ef2416;
+                    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.12), 0 2px 16px 0 rgba(14, 30, 37, 0.32);
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                }
+            }
+            .content-name {
+                h3 {
+                    margin: 0;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 2.8rem;
+                    min-height: 5.8rem;
+                    color: #c8102e;
+                }
+
+                .expert--name {
+                    text-wrap: nowrap;
+                    font-size: 18px;
+                }
+            }
+
+            .content-expert-eye {
+                margin: 30px 20px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                .content-expert-show {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    text-align: center;
+
+                    &:hover button {
+                        color: #00a2ff;
+                        border: 0.3px solid #00a2ff;
+                    }
+                    .icon-expert {
+                        color: #c8102e;
+                    }
+                    &:hover .icon-expert {
+                        color: #00a2ff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wrapperNextArrow {
+    position: absolute;
+    right: 40px;
+    z-index: 6666;
+    bottom: 40%;
+    width: 25px;
+    cursor: pointer;
+}
+
+.wrapperPreArrow {
+    left: -24px;
+    position: absolute;
+    z-index: 6666;
+    top: 45%;
+    width: 25px;
+    cursor: pointer;
+}

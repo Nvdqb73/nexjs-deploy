@@ -1,0 +1,34 @@
+{
+    "name": "study-nextjs",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "i18nexus pull && next dev",
+        "build": "i18nexus pull && next build",
+        "start": "i18nexus pull && next start",
+        "lint": "i18nexus pull && next lint"
+    },
+    "dependencies": {
+        "@tabler/icons-react": "^3.2.0",
+        "autoprefixer": "^9.8.8",
+        "classnames": "^2.5.1",
+        "i18next": "^23.11.2",
+        "i18next-resources-to-backend": "^1.2.1",
+        "next": "14.2.1",
+        "next-i18n-router": "^5.4.1",
+        "normalize.css": "^8.0.1",
+        "postcss": "^7.0.39",
+        "react": "^18",
+        "react-dom": "^18",
+        "react-i18next": "^14.1.0",
+        "react-image-lightbox": "^5.1.4",
+        "react-router-dom": "^6.22.3",
+        "react-slick": "^0.30.2",
+        "sass": "^1.75.0",
+        "slick-carousel": "^1.8.1",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    },
+    "devDependencies": {
+        "i18nexus-cli": "^3.4.0"
+    }
+}
